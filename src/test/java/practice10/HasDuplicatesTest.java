@@ -23,7 +23,7 @@ public class HasDuplicatesTest extends CustomUtilsTest {
 
     @ParameterizedTest
     @MethodSource("listForDuplicatesCheck")
-    public void userCanCalculateGcd(int[] array, boolean expectedHasDuplicates) {
+    public void userCanCheckDuplicates(int[] array, boolean expectedHasDuplicates) {
         var actualHasDuplicates = customUtils.hasDuplicates(array);
         assertEquals(expectedHasDuplicates, actualHasDuplicates, "Некорректная проверка на дубликаты");
     }

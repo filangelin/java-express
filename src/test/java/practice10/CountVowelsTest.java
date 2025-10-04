@@ -21,7 +21,7 @@ public class CountVowelsTest extends CustomUtilsTest {
                 //Строки без гласных
                 Arguments.of("tst", 0),
                 //Пустая строка
-                Arguments.of("tst", 0)
+                Arguments.of("", 0)
         );
     }
 
