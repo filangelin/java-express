@@ -7,10 +7,6 @@ public class DebugTask5 {
         System.out.println("Updated age: " + person.getAge());
     }
 
-    //вариант 2
-    public static Person updateAge(Person person) {
-        return new Person(person.getName(), person.getAge() + 1);
-    }
 }
 
 class Person {
@@ -30,7 +26,7 @@ class Person {
         return age;
     }
 
-    //вариант 1 (кажется правильнее)
+
     public void updateAge() {
         this.age++;
     }

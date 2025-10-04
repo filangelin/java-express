@@ -8,7 +8,7 @@ import java.util.List;
 public class DebugTask10 {
     public static void main(String[] args) {
         List<String> names = new ArrayList<>(Arrays.asList("Alice", "Bob", "Charlie"));
-        Iterator<String> iter = names.iterator();
+        Iterator<String> iter = names.iterator(); // без итератора был бы ConcurrentModificationException, так как for-each нарушается согласованность modCount
 
         while (iter.hasNext()) {
             var el = iter.next();

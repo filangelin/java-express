@@ -6,7 +6,7 @@ public class DebugTask4 {
     }
 
     public static boolean isPalindrome(String str) {
-        if (str == null) return false;
+        if (str == null) return false; //null обрабатывается осознанно
         String reversed = new StringBuilder(str).reverse().toString();
         return str.equals(reversed);
     }
